@@ -11,11 +11,19 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbzuOXUaaXHCNICMu-Ogs3
 const form = document.forms['form']
 
 form.addEventListener('submit', e => {
+  e.preventDefault();
 
-  e.preventDefault()
-
-  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-  .then(response => alert("Thank you! Form is submitted" ))
-  .then(() => { window.location.reload(); })
-  .catch(error => console.error('Error!', error.message))
-})
+  fetch('/', {
+    method: 'POST',
+    body: new FormData(form)
+  })
+  .then(response => {
+    if (response.ok) {
+      alert("Database Updated!");
+      return response.json(); 
+    } else {
+      throw new Error('Network response was not ok.');
+    }
+  })
+  .catch(error => console.error('Error!', error.message));
+});
