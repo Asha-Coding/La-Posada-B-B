@@ -1,6 +1,6 @@
 {% extends "layout.html" %}
 
-{% block title %}La Posada B&B{% endblock %}
+{% block title %}Reserva | La Posada B&B{% endblock %}
 
 {% block content %}
 <section class="home" id="home">
@@ -12,13 +12,8 @@
                   Reserva en La Posada B&B <br>
                   Ahora
                </h1>
-               <div class="desc">
-                  <p>
-                     Usted puede tener la comodidad que necesite en nuestro Hotel.
-                  </p>
-               </div>
                <div class="buttons">
-                  <button class="btn">Encuentranos Ahora</button>
+                  <button class="btn">Ubicacion!</button>
                </div>
             </div>
 
@@ -31,23 +26,23 @@
                   <div class="line">
                      <label for="">Nombre de la Reserva</label>
                      <input type="text" name="name" id="name" class="input"
-                        placeholder="El Nombre de la persona de la Reservacion">
+                        placeholder="El Nombre de la persona de la Reservacion" required>
                   </div>
                   <div class="line">
                      <label for="">Telefono</label>
-                     <input type="tel" name="phone" id="phone" class="input" placeholder="+504 9999-9999">
+                     <input type="tel" name="phone" id="phone" class="input" placeholder="+504 9999-9999" required>
                   </div>
                   <div class="line">
                      <label for="">Check in</label>
-                     <input type="date" name="in" id="in" class="input">
+                     <input type="date" name="in" id="in" class="input" required>
                   </div>
                   <div class="line">
                      <label for="">Check out</label>
-                     <input type="date" name="out" id="out" class="input">
+                     <input type="date" name="out" id="out" class="input" required>
                   </div>
                   <div class="line">
                      <label for="">ID:</label>
-                     <input type="text" name="id" id="id" class="input" placeholder="Numero de Identidad">
+                     <input type="text" name="id" id="id" class="input" placeholder="Numero de Identidad" required>
                   </div>
                   <div class="line">
                      <label for="">Huespedes:</label>

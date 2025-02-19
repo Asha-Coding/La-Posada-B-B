@@ -32,8 +32,12 @@ with app.app_context():
       print("User already exists.")
 
 
-@app.route("/", methods=["GET", "POST"])
+@app.route("/")
 def home_page():
+    return render_template("home.html")
+
+@app.route("/reservation", methods=["GET", "POST"])
+def reservation_page():
     if request.method == "POST":
         # Get form data
         name = request.form["name"]
@@ -46,9 +50,9 @@ def home_page():
         # Save the user data to the database
         insert_user(name, phone, check_in, check_out, identity, guests)
         flash('Database Updated')  # Flash a success message
-        return redirect(url_for("about_page"))  # Redirect to another page or the same page
+        return redirect(url_for("home_page"))  # Redirect to another page or the same page
 
-    return render_template("page.html")
+    return render_template("reservation.html")
 
 
 @app.route("/about")
