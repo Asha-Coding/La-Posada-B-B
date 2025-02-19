@@ -27,7 +27,16 @@
             <div class="box">
                <h1 class="title">Reserva</h1>
 
-               <form action="" class="form">
+               <form method="post" action="" class="form">
+                  <div class="line">
+                     <label for="">Nombre de la Reserva</label>
+                     <input type="text" name="name" id="name" class="input"
+                        placeholder="El Nombre de la persona de la Reservacion">
+                  </div>
+                  <div class="line">
+                     <label for="">Telefono</label>
+                     <input type="tel" name="phone" id="phone" class="input" placeholder="+504 9999-9999">
+                  </div>
                   <div class="line">
                      <label for="">Check in</label>
                      <input type="date" name="in" id="in" class="input">
@@ -35,6 +44,10 @@
                   <div class="line">
                      <label for="">Check out</label>
                      <input type="date" name="out" id="out" class="input">
+                  </div>
+                  <div class="line">
+                     <label for="">ID:</label>
+                     <input type="text" name="id" id="id" class="input" placeholder="Numero de Identidad">
                   </div>
                   <div class="line">
                      <label for="">Huespedes:</label>
@@ -50,21 +63,8 @@
                      </select>
                   </div>
                   <div class="line">
-                     <label for="">Habitaciones:</label>
-                     <select name="habitaciones" id="Habitacioness" class="input">
-                        <option value="1">1 Habitacion</option>
-                        <option value="2">2 Habitaciones</option>
-                        <option value="3">3 Habitaciones</option>
-                        <option value="4">4 Habitaciones</option>
-                        <option value="5">5 Habitaciones</option>
-                        <option value="6">6 Habitaciones</option>
-                        <option value="7">7 Habitaciones</option>
-                        <option value="8">8 Habitaciones</option>
-                        <option value="9">9 Habitaciones</option>
-                     </select>
-                  </div>
-                  <div class="line">
-                     <button class="btn">Chequear Disponibilidad</button>
+                     <input type="submit" value="Chequear Disponibilidad" class="btn">
+                     <!-- <button class="btn">Chequear Disponibilidad</button> -->
                   </div>
                </form>
             </div>
