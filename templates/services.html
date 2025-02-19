@@ -1,0 +1,76 @@
+{% extends "layout.html" %}
+
+{% block title %}Servicios | La Posada B&B{% endblock %}
+
+{% block content %}
+<section class="home" id="home">
+   <div class="container">
+      <div class="items">
+         <div class="item">
+            <div class="content">
+               <h1 class="title">
+                  Reserva en La Posada B&B <br>
+                  Ahora
+               </h1>
+               <div class="desc">
+                  <p>
+                     Usted puede tener la comodidad que necesite en nuestro Hotel.
+                  </p>
+               </div>
+               <div class="buttons">
+                  <button class="btn">Encuentranos Ahora</button>
+               </div>
+            </div>
+
+         </div>
+         <div class="item">
+            <div class="box">
+               <h1 class="title">Reserva</h1>
+
+               <form action="" class="form">
+                  <div class="line">
+                     <label for="">Check in</label>
+                     <input type="date" name="in" id="in" class="input">
+                  </div>
+                  <div class="line">
+                     <label for="">Check out</label>
+                     <input type="date" name="out" id="out" class="input">
+                  </div>
+                  <div class="line">
+                     <label for="">Guest:</label>
+                     <select name="guests" id="Guests" class="input">
+                        <option value="1">1 Adulto</option>
+                        <option value="2">2 Adultos</option>
+                        <option value="2">3 Adultos</option>
+                        <option value="3">2 Adultos + 1 Niño</option>
+                        <option value="4">2 Adultos + 2 Niño</option>
+                        <option value="5">4 Adultos + 2 Niño</option>
+                        <option value="6">4 Adultos + 3 Niño</option>
+                        <option value="7">4 Adultos + 4 Niño</option>
+                     </select>
+                  </div>
+                  <div class="line">
+                     <label for="">Habitaciones:</label>
+                     <select name="habitaciones" id="Habitacioness" class="input">
+                        <option value="1">1 Habitacion</option>
+                        <option value="2">2 Habitaciones</option>
+                        <option value="3">3 Habitaciones</option>
+                        <option value="4">4 Habitaciones</option>
+                        <option value="5">5 Habitaciones</option>
+                        <option value="6">6 Habitaciones</option>
+                        <option value="7">7 Habitaciones</option>
+                        <option value="8">8 Habitaciones</option>
+                        <option value="9">9 Habitaciones</option>
+                     </select>
+                  </div>
+                  <div class="line">
+                     <button class="btn">Chequear Disponibilidad</button>
+                  </div>
+               </form>
+            </div>
+
+         </div>
+      </div>
+   </div>
+</section>
+{% endblock %}
