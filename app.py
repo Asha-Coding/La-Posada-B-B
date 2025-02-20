@@ -34,7 +34,7 @@ with app.app_context():
 
 @app.route("/")
 def home_page():
-    return render_template("home.html")
+    return render_template("home.html", stylesheet='home.css')
 
 @app.route("/reservation", methods=["GET", "POST"])
 def reservation_page():
@@ -52,32 +52,32 @@ def reservation_page():
         flash('Database Updated')  # Flash a success message
         return redirect(url_for("home_page"))  # Redirect to another page or the same page
 
-    return render_template("reservation.html")
+    return render_template("reservation.html", stylesheet='style.css')
 
 
 @app.route("/about")
 def about_page():
-    return render_template("about.html")
+    return render_template("about.html", stylesheet='style.css')
 
 
 @app.route("/services")
 def services_page():
-    return render_template("services.html")
+    return render_template("services.html", stylesheet='style.css')
 
 
 @app.route("/news")
 def news_page():
-    return render_template("news.html")
+    return render_template("news.html", stylesheet='style.css')
 
 
 @app.route("/contact")
 def contact_page():
-    return render_template("contact.html")
+    return render_template("contact.html", stylesheet='style.css')
 
 
 @app.errorhandler(404)
 def page_not_found(error):
-    return render_template("404.html")
+    return render_template("404.html", stylesheet='404.css'),
 
 
 if __name__ == '__main__':

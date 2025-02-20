@@ -1,0 +1,13 @@
+TODO:
+
+1. Terminar el diseño de la pagina principal La Posada
+2. Poner un Icono en la pestaña de la pagina
+3. Terminar la funcion de contacto
+4. Hacer un Payment Menu cuando la persona quiera reservar
+5. Usando el Database o Google Sheet, revisar si los dias que la persona quiere reservar esta disponible o no.
+
+NOTES:
+
+Para eliminar data de la database, correr este comando en la terminal:
+
+
