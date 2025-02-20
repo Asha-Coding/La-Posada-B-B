@@ -508,13 +508,13 @@ body {
    text-align: center;
 }
 
-.travellers__card__content span {
+.travellers__card__content .person-icon {
    display: inline-block;
-   padding: 20px 32px;
-   margin-bottom: 2rem;
-   font-size: 3rem;
+   padding: 25px 26px;
+   margin-bottom: 15px;
+   font-size: 2rem;
    color: var(--white);
-   background-color: var(--primary-color);
+   background-color: #ffcca3;
    border-radius: 100%;
 }
 
@@ -535,7 +535,7 @@ body {
    color: var(--text-dark);
 }
 
-.travellers__card__content p {
+.travellers__card__content .traveller_country {
    font-weight: 500;
    color: var(--text-light);
 }
