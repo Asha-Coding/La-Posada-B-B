@@ -1,6 +1,6 @@
 from flask import Flask, render_template, url_for, flash, redirect, request
 
-from user_models import create_user_table, insert_user, find_user_by_identity, get_user
+from user_models import create_user_table, insert_user, get_user
 import sqlite3
 
 

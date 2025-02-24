@@ -10,6 +10,31 @@
    --max-width: 1200px;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+   -webkit-appearance: none;
+   margin: 0;
+}
+
+#reservar-btn1 {
+   background-color: #cf4624;
+   color: white;
+}
+#reservar-btn2 {
+   background-color: #cf4624;
+   color: white;
+}
+#reservar-btn3 {
+   background-color: #cf4624;
+   color: white;
+}
+
+#booking-btn {
+   background-color: #cf4624;
+   color: white;
+}
+
+
 * {
    padding: 0px;
    margin: 0px;
@@ -51,6 +76,7 @@
    color: #cf4624;
    text-transform: uppercase;
    letter-spacing: 2px;
+   text-decoration: none;
    /* font-family: "Oswald", sans-serif */
 }
 
@@ -77,6 +103,7 @@
    font-weight: 400;
    color: #444;
    transition: all 1s;
+   text-decoration: none;
 }
 
 .header .navbar .navigation .link:hover {
@@ -172,18 +199,15 @@
    background-color: var(--primary-color-dark);
 }
 
-a {
+/* a {
    text-decoration: none;
-}
+} */
 
-img {
+/* img {
    width: 100%;
    display: flex;
-}
+} */
 
-body {
-   font-family: "Poppins", sans-serif;
-}
 
 .booking__container {
    border-radius: 2rem;
@@ -443,52 +467,6 @@ body {
    line-height: 1.75rem;
 }
 
-.lounge__container {
-   display: grid;
-   grid-template-columns: repeat(2, 1fr);
-   gap: 2rem;
-}
-
-.lounge__grid {
-   margin-top: 4rem;
-   display: grid;
-   grid-template-columns: repeat(2, 1fr);
-   gap: 2rem;
-}
-
-.lounge__image {
-   position: relative;
-}
-
-.lounge__image img {
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   border-radius: 20rem;
-   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
-}
-
-.lounge__image img:nth-child(1) {
-   max-width: 300px;
-   transform: translate(calc(-50% - 3rem), -50%);
-}
-
-.lounge__image img:nth-child(2) {
-   max-width: 200px;
-   transform: translate(calc(-50% + 6rem), calc(-50% + 7rem));
-}
-
-.lounge__details h4 {
-   margin-bottom: 0.5rem;
-   font-size: 1.2rem;
-   font-weight: 600;
-   color: var(--text-dark);
-}
-
-.lounge__details p {
-   color: var(--text-light);
-}
-
 .travellers__grid {
    margin-top: 4rem;
    display: grid;
@@ -599,6 +577,15 @@ body {
    transition: 0.3s;
 }
 
+.footer__col p a {
+   color: var(--extra-light);
+   transition: all 1s;
+}
+
+.footer__col p a:hover {
+   color: var(--white);
+}
+
 .footer__col p:hover {
    color: var(--white);
 }
@@ -628,11 +615,28 @@ body {
    color: var(--extra-light);
 }
 
+.availability-form {
+   margin-top: -50px;
+   z-index: 2;
+   position: relative;
+}
+
+#menu{
+   display: none;
+}
+
+@media screen and (max-width: 575px) {
+   .availability-form {
+      margin-top: 25px;
+      padding: 0 35px;
+   }
+
+}
+
 @media (width < 1200px) {
 
    .section__container.header__container,
-   .section__container.plan__container,
-   .section__container.lounge__container {
+   .section__container.plan__container {
       overflow: hidden;
    }
 
@@ -670,14 +674,6 @@ body {
       gap: 2rem;
    }
 
-   .lounge__container {
-      grid-template-columns: repeat(1, 1fr);
-   }
-
-   .lounge__image {
-      min-height: 600px;
-   }
-
    .travellers__grid {
       grid-template-columns: repeat(2, 1fr);
    }
@@ -708,10 +704,6 @@ body {
       grid-template-columns: repeat(1, 1fr);
    }
 
-   .lounge__grid {
-      grid-template-columns: repeat(1, 1fr);
-   }
-
    .travellers__grid {
       grid-template-columns: repeat(1, 1fr);
    }
@@ -723,5 +715,75 @@ body {
    .footer__bar {
       flex-direction: column;
       text-align: center;
+   }
+}
+
+@media (max-width:1050px) {
+   .home .items .item:nth-child(1){
+      width: 100%;
+      margin-top: 100vh;
+      margin-bottom: 4rem;
+   }
+
+   .home .items .item .box{
+      border: 1px solid #aaa;
+      margin-top: 3rem;
+   }
+
+   .home .items .item .content .title{
+      text-align: center;
+   }
+
+   .home .items .item .content .desc p{
+      text-align: center;
+   }
+   .home .items .item .content .buttons{
+      display: flex;
+      justify-content: center;
+      width: 100%;
+   }
+}
+
+@media (max-width:750px) {
+   #menu {
+      display: flex !important;
+   }
+
+   #controls{
+      position: fixed;
+      top: 0.5rem;
+      left: 0;
+      width: 100%;
+      display: flex !important;
+      padding: 1rem 2rem;
+      z-index: 1000;
+   }
+   .navigation{
+      position: fixed;
+      top: 0;
+      right: -100%;
+      width: 100%;
+      max-width: 450px;
+      height: 100vh;
+      background-color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 2rem;
+      transition: all 1s;
+      box-shadow: 2px 2px 10px #aaa;
+      z-index: 100;
+   }
+
+   .navigation.active{
+      position: fixed;
+      top: 0;
+      right: 0%;
+   }
+
+   .home .items .item:nth-child(1){
+      width: 100%;
+      margin-top: 100vh;
    }
 }

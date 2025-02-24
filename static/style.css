@@ -48,6 +48,7 @@
    color: #cf4624;
    text-transform: uppercase;
    letter-spacing: 2px;
+   text-decoration: none;
    /* font-family: "Oswald", sans-serif */
 }
 .header .navbar .logo-link span{
@@ -56,6 +57,7 @@
    color: #444;
    letter-spacing: 1px;
    text-transform: uppercase;
+   text-decoration: none;
    margin-left: -1px;
    /* font-family: "Poppins", sans-serif */
 }
@@ -73,6 +75,7 @@
    font-weight: 400;
    color: #444;
    transition: all 1s;
+   text-decoration: none;
 }
 
 .header .navbar .navigation .link:hover{
