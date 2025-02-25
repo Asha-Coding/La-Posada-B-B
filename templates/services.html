@@ -1,76 +1,122 @@
 {% extends "layout.html" %}
 
-{% block title %}Servicios | La Posada B&B{% endblock %}
+{% block title %}Servicios - La Posada B&B{% endblock %}
 
 {% block content %}
-<section class="home" id="home">
-   <div class="container">
-      <div class="items">
-         <div class="item">
-            <div class="content">
-               <h1 class="title">
-                  Reserva en La Posada B&B <br>
-                  Ahora
-               </h1>
-               <div class="desc">
-                  <p>
-                     Usted puede tener la comodidad que necesite en nuestro Hotel.
-                  </p>
-               </div>
-               <div class="buttons">
-                  <button class="btn">Encuentranos Ahora</button>
-               </div>
-            </div>
+<div class="my-5 px-4" id="facilities-header">
+   <h2 class="fw-bold h-font text-center">Nuestros Servicios</h2>
+   <div class="h-line bg-dark line"></div>
+   <p class="text-center mt-3">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione magni, cupiditate repellendus earum deserunt
+      <br> saepe quod laboriosam recusandae dolorem repudiandae!
+   </p>
+</div>
 
+<div class="container">
+   <div class="row">
+      <div class="col-lg-4 col-md-6 mb-5 px-4">
+         <div class="bg-white p-4 shadow rounded border-top border-4 border-dark pop">
+            <div class="d-flex align-items-center mb-2">
+               <img src="/static/assets/facilities/bath.svg" width="40px">
+               <h5 class="m-0 ms-3">Agua Caliente</h5>
+            </div>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus consequuntur mollitia nesciunt adipisci
+               rem ut earum.</p>
          </div>
-         <div class="item">
-            <div class="box">
-               <h1 class="title">Reserva</h1>
-
-               <form action="" class="form">
-                  <div class="line">
-                     <label for="">Check in</label>
-                     <input type="date" name="in" id="in" class="input">
-                  </div>
-                  <div class="line">
-                     <label for="">Check out</label>
-                     <input type="date" name="out" id="out" class="input">
-                  </div>
-                  <div class="line">
-                     <label for="">Guest:</label>
-                     <select name="guests" id="Guests" class="input">
-                        <option value="1">1 Adulto</option>
-                        <option value="2">2 Adultos</option>
-                        <option value="2">3 Adultos</option>
-                        <option value="3">2 Adultos + 1 Niño</option>
-                        <option value="4">2 Adultos + 2 Niño</option>
-                        <option value="5">4 Adultos + 2 Niño</option>
-                        <option value="6">4 Adultos + 3 Niño</option>
-                        <option value="7">4 Adultos + 4 Niño</option>
-                     </select>
-                  </div>
-                  <div class="line">
-                     <label for="">Habitaciones:</label>
-                     <select name="habitaciones" id="Habitacioness" class="input">
-                        <option value="1">1 Habitacion</option>
-                        <option value="2">2 Habitaciones</option>
-                        <option value="3">3 Habitaciones</option>
-                        <option value="4">4 Habitaciones</option>
-                        <option value="5">5 Habitaciones</option>
-                        <option value="6">6 Habitaciones</option>
-                        <option value="7">7 Habitaciones</option>
-                        <option value="8">8 Habitaciones</option>
-                        <option value="9">9 Habitaciones</option>
-                     </select>
-                  </div>
-                  <div class="line">
-                     <button class="btn">Chequear Disponibilidad</button>
-                  </div>
-               </form>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-5 px-4">
+         <div class="bg-white p-4 shadow rounded border-top border-4 border-dark pop">
+            <div class="d-flex align-items-center mb-2">
+               <img src="/static/assets/facilities/breakfast.svg" width="40px">
+               <h5 class="m-0 ms-3">Desayunos Incluidos</h5>
             </div>
-
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus consequuntur mollitia nesciunt adipisci
+               rem ut earum.</p>
+         </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-5 px-4">
+         <div class="bg-white p-4 shadow rounded border-top border-4 border-dark pop">
+            <div class="d-flex align-items-center mb-2">
+               <img src="/static/assets/facilities/pool.svg" width="40px">
+               <h5 class="m-0 ms-3">Piscina Incluida</h5>
+            </div>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus consequuntur mollitia nesciunt adipisci
+               rem ut earum.</p>
+         </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-5 px-4">
+         <div class="bg-white p-4 shadow rounded border-top border-4 border-dark pop">
+            <div class="d-flex align-items-center mb-2">
+               <img src="/static/assets/facilities/restroom.svg" width="40px">
+               <h5 class="m-0 ms-3">Baños Privados</h5>
+            </div>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus consequuntur mollitia nesciunt adipisci
+               rem ut earum.</p>
+         </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-5 px-4">
+         <div class="bg-white p-4 shadow rounded border-top border-4 border-dark pop">
+            <div class="d-flex align-items-center mb-2">
+               <img src="/static/assets/facilities/wifi.svg" width="40px">
+               <h5 class="m-0 ms-3">Wifi Gratis</h5>
+            </div>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus consequuntur mollitia nesciunt adipisci
+               rem ut earum.</p>
+         </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-5 px-4">
+         <div class="bg-white p-4 shadow rounded border-top border-4 border-dark pop">
+            <div class="d-flex align-items-center mb-2">
+               <img src="/static/assets/facilities/bath.svg" width="40px">
+               <h5 class="m-0 ms-3">???</h5>
+            </div>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus consequuntur mollitia nesciunt adipisci
+               rem ut earum.</p>
          </div>
       </div>
    </div>
-</section>
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+   <div class="section__container footer__container">
+      <div class="footer__col">
+         <h3>La Posada B&B</h3>
+         <p>
+            Esperamos que puedas darnos oportunindad de servirte en tu proxima visita a San Pedro Sula. Nuestro hotel
+            tiene servicios comods para que te sientas como en casa, con un ambiente tranquilo y relajante, que puedes
+            disfrutar con tu familia o amigos.
+         </p>
+         <p>
+            Tenemos un staff amable y atento, que te ayudara en lo que necesites durante tu estadia.
+         </p>
+      </div>
+      <div class="col-lg-4 p-4">
+         <h5 class="mb-3 text-white">Links</h5>
+         <a href="#" class="d-inline-block mb-2 text-white text-decoration-none">Inicio</a> <br>
+         <a href="#" class="d-inline-block mb-2 text-white text-decoration-none">Reservar</a> <br>
+         <a href="#" class="d-inline-block mb-2 text-white text-decoration-none">Servicios</a> <br>
+         <a href="#" class="d-inline-block mb-2 text-white text-decoration-none">Contactanos</a> <br>
+         <a href="#" class="d-inline-block mb-2 text-white text-decoration-none">Sobre Nosotros</a> <br>
+      </div>
+      <div class="col-lg-4 p-4">
+         <h5 class="mb-3 text-white">Follow Us</h5>
+         <a href="https://www.facebook.com/laposada.hostel.5/"
+            class="d-inline-block text-white text-decoration-none mb-2" target="_blank"><i class="bi bi-facebook"></i>
+            Facebook</a> <br>
+         <a href="https://www.tiktok.com/@laposadasps" class="d-inline-block text-white text-decoration-none mb-2"
+            target="_blank"><i class="bi bi-tiktok"></i> Tiktok</a> <br>
+         <a href="https://www.instagram.com/laposadabyb/" class="d-inline-block text-white text-decoration-none"
+            target="_blank"><i class="bi bi-instagram"></i> Instagram</a> <br>
+      </div>
+   </div>
+   <div class="section__container footer__bar">
+      <p>Copyright © 2023 Web Design Mastery. All rights reserved.</p>
+   </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+   integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
 {% endblock %}

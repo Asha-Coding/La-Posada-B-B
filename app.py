@@ -17,7 +17,7 @@ my_user = {
 }
 
 with app.app_context():
-   create_user_table()  # Create the user table if it doesn't exist
+   create_user_table()
 
    print("Checking user existence...")
    user_exist = get_user(my_user["identity"], my_user["name"])
@@ -57,12 +57,12 @@ def reservation_page():
 
 @app.route("/about")
 def about_page():
-    return render_template("about.html", stylesheet='style.css')
+    return render_template("about.html", stylesheet='about.css')
 
 
 @app.route("/services")
 def services_page():
-    return render_template("services.html", stylesheet='style.css')
+    return render_template("services.html", stylesheet='services.css')
 
 
 @app.route("/news")
