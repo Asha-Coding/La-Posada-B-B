@@ -1,148 +1,184 @@
-{% extends "layout.html" %}
+<!DOCTYPE html>
+<html lang="en">
 
-{% block title %}Sobre Nosotros - La Posada B&B{% endblock %}
-{% block content %}
-<div class="my-5 px-4" id="about-header">
-   <h2 class="fw-bold h-font text-center">Sobre Nosotros</h2>
-   <div class="h-line bg-dark line"></div>
-   <p class="text-center mt-3">
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione magni, cupiditate repellendus earum deserunt
-      <br> saepe quod laboriosam recusandae dolorem repudiandae!
-   </p>
-</div>
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>La Posada B&B</title>
+   <link rel="stylesheet" href="/static/about.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/css/boxicons.min.css">
+   <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet" />
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+   <link rel="icon" type="image/x-icon" href="/static/assets/icon/icon.png">
+</head>
 
-<div class="container">
-   <div class="row justify-content-between align-items-center">
-      <div class="col-lg-6 col-md-5 mb-4 order-lg-1 order-md-1 order-2">
-         <h3 class="mb-3">Buena Experiencia</h3>
-         <p>
-            Hemos estado en el mercado por mas de 16 años, ofreciendo servicios de calidad a nuestros clientes. Nuestro
-            hotel es reconocido por la atencion personalizada y
-            la comodidad de nuestras habitaciones. Nuestro staff esta entrenado para brindarte la mejor experiencia en
-            tu estadia.
-         </p>
-      </div>
-      <div class="col-lg-5 col-md-5 mb-4 order-lg-2 order-md-2 order-1">
-         <img src="/static/assets/images/experience.svg" width="170px">
-      </div>
+<body>
+   <header class="header" id="header">
+      <nav class="navbar">
+         <a href="home.html" class="logo-link">La Posada<span>B&B</span></a>
+         <div class="navigation" id="navigation">
+            <a href="home.html" class="link">Inicio</a>
+            <a href="habitaciones.html" class="link">Habitaciones</a>
+            <a href="about.html" class="link">Sobre Nosotros</a>
+            <a href="services.html" class="link">Servicios</a>
+
+
+         </div>
+         <div class="controls" id="controls">
+            <span class="icon"><i class="bx bx-user"></i></span>
+            <span class="icon"><i class="bx bx-search"></i></span>
+            <span class="icon menu" id="menu"><i class="bx bx-menu-alt-right"></i></span>
+         </div>
+      </nav>
+   </header>
+
+   <div class="my-5 px-4" id="about-header">
+      <h2 class="fw-bold h-font text-center" id="sobre-nosotros">Sobre Nosotros</h2>
+      <div class="h-line bg-dark line"></div>
+      <p class="text-center mt-3">
+         En La Posada B&B combinamos confort, atención personalizada y un ambiente acogedor para que te sientas como en casa. <br>Nuestro compromiso es brindarte una experiencia única, con un equipo dedicado a hacer de tu visita algo especial.
+      </p>
    </div>
 
-   <div class="row justify-content-between align-items-center">
-      <div class="col-lg-6 col-md-5 mb-4 order-lg-1 order-md-1 order-2">
-         <h3 class="mb-3">Buenas Opiniones</h3>
-         <p>
-            Tenemos una excelente reputacion en el mercado. Nuestros clientes siempre nos recomiendan por la calidad de
-            nuestros servicios y la atencion
-            personalizada que ofrecemos. Tenemos un buen rating en las plataformas de reservas de hoteles y redes
-            sociales.
-         </p>
-      </div>
-      <div class="col-lg-5 col-md-5 mb-4 order-lg-2 order-md-2 order-1">
-         <img src="/static/assets/images/image.png" width="170px">
-      </div>
-   </div>
-</div>
-
-<div class="container mt-5">
-   <div class="row">
-      <div class="col-lg-3 col-md-6 mb-4 px-4">
-         <div class="bg-white rounded shadow p-4 border-top border-4 text-center" id="about-card1">
-            <img src="/static/assets/images/staff.svg" width="70px">
-            <h3 class="mt-3">Atencion 24/7</h3>
+   <div class="container">
+      <div class="row justify-content-between align-items-center">
+         <div class="col-lg-6 col-md-5 mb-4 order-lg-1 order-md-1 order-2">
+            <h3 class="mb-3">Buena Experiencia</h3>
+            <p>
+               Hemos estado en el mercado por mas de 16 años, ofreciendo servicios de calidad a nuestros clientes. Nuestro
+               hotel es reconocido por la atencion personalizada y
+               la comodidad de nuestras habitaciones. Nuestro staff esta entrenado para brindarte la mejor experiencia en
+               tu estadia.
+            </p>
+         </div>
+         <div class="col-lg-5 col-md-5 mb-4 order-lg-2 order-md-2 order-1">
+            <img src="/static/assets/images/experience.svg" width="170px">
          </div>
       </div>
-      <div class="col-lg-3 col-md-6 mb-4 px-4">
-         <div class="bg-white rounded shadow p-4 border-top border-4 text-center" id="about-card2">
-            <img src="/static/assets/images/world.svg" width="70px">
-            <h3 class="mt-3">Clientes Internacionales</h3>
+
+      <div class="row justify-content-between align-items-center">
+         <div class="col-lg-6 col-md-5 mb-4 order-lg-1 order-md-1 order-2">
+            <h3 class="mb-3">Buenas Opiniones</h3>
+            <p>
+               Tenemos una excelente reputacion en el mercado. Nuestros clientes siempre nos recomiendan por la calidad de
+               nuestros servicios y la atencion
+               personalizada que ofrecemos. Tenemos un buen rating en las plataformas de reservas de hoteles y redes
+               sociales.
+            </p>
          </div>
-      </div>
-      <div class="col-lg-3 col-md-6 mb-4 px-4">
-         <div class="bg-white rounded shadow p-4 border-top border-4 text-center" id="about-card3">
-            <img src="/static/assets/images/work.svg" width="70px">
-            <h3 class="mt-3">Confianza Compañias</h3>
-         </div>
-      </div>
-      <div class="col-lg-3 col-md-6 mb-4 px-4">
-         <div class="bg-white rounded shadow p-4 border-top border-4 text-center" id="about-card3">
-            <img src="/static/assets/images/shop2.svg" width="70px">
-            <h3 class="mt-3">Tiendas</h3>
+         <div class="col-lg-5 col-md-5 mb-4 order-lg-2 order-md-2 order-1">
+            <img src="/static/assets/images/image.png" width="170px">
          </div>
       </div>
    </div>
-</div>
 
-<h3 class="my-5 text-center">Nuestra Tematica</h3>
-
-<div class="container px-4">
-   <!-- Swiper -->
-   <div class="swiper mySwiper">
-      <div class="swiper-wrapper mb-5">
-         <div class="swiper-slide">
-            <img src="/static/assets/images/room1.jpg" class="img-fluid" alt="Room 1">
+   <div class="container mt-5">
+      <div class="row">
+         <div class="col-lg-3 col-md-6 mb-4 px-4">
+            <div class="bg-white rounded shadow p-4 border-top border-4 text-center" id="about-card1">
+               <img src="/static/assets/images/staff.svg" width="70px">
+               <h3 class="mt-3">Atencion 24/7</h3>
+            </div>
          </div>
-         <div class="swiper-slide">Slide 2</div>
-         <div class="swiper-slide">Slide 3</div>
-         <div class="swiper-slide">Slide 4</div>
-         <div class="swiper-slide">Slide 5</div>
-         <div class="swiper-slide">Slide 6</div>
-         <div class="swiper-slide">Slide 7</div>
-         <div class="swiper-slide">Slide 8</div>
-         <div class="swiper-slide">Slide 9</div>
-      </div>
-      <div class="swiper-pagination"></div>
-   </div>
-</div>
-
-<!-- Footer -->
-<footer class="footer">
-   <div class="section__container footer__container">
-      <div class="footer__col">
-         <h3>La Posada B&B</h3>
-         <p>
-            Esperamos que puedas darnos oportunindad de servirte en tu proxima visita a San Pedro Sula. Nuestro hotel
-            tiene servicios comods para que te sientas como en casa, con un ambiente tranquilo y relajante, que puedes
-            disfrutar con tu familia o amigos.
-         </p>
-         <p>
-            Tenemos un staff amable y atento, que te ayudara en lo que necesites durante tu estadia.
-         </p>
-      </div>
-      <div class="col-lg-4 p-4">
-         <h5 class="mb-3 text-white">Links</h5>
-         <a href="#" class="d-inline-block mb-2 text-white text-decoration-none">Inicio</a> <br>
-         <a href="#" class="d-inline-block mb-2 text-white text-decoration-none">Reservar</a> <br>
-         <a href="#" class="d-inline-block mb-2 text-white text-decoration-none">Servicios</a> <br>
-         <a href="#" class="d-inline-block mb-2 text-white text-decoration-none">Contactanos</a> <br>
-         <a href="#" class="d-inline-block mb-2 text-white text-decoration-none">Sobre Nosotros</a> <br>
-      </div>
-      <div class="col-lg-4 p-4">
-         <h5 class="mb-3 text-white">Follow Us</h5>
-         <a href="https://www.facebook.com/laposada.hostel.5/"
-            class="d-inline-block text-white text-decoration-none mb-2" target="_blank"><i class="bi bi-facebook"></i>
-            Facebook</a> <br>
-         <a href="https://www.tiktok.com/@laposadasps" class="d-inline-block text-white text-decoration-none mb-2"
-            target="_blank"><i class="bi bi-tiktok"></i> Tiktok</a> <br>
-         <a href="https://www.instagram.com/laposadabyb/" class="d-inline-block text-white text-decoration-none"
-            target="_blank"><i class="bi bi-instagram"></i> Instagram</a> <br>
+         <div class="col-lg-3 col-md-6 mb-4 px-4">
+            <div class="bg-white rounded shadow p-4 border-top border-4 text-center" id="about-card2">
+               <img src="/static/assets/images/world.svg" width="70px">
+               <h3 class="mt-3">Clientes Internacionales</h3>
+            </div>
+         </div>
+         <div class="col-lg-3 col-md-6 mb-4 px-4">
+            <div class="bg-white rounded shadow p-4 border-top border-4 text-center" id="about-card3">
+               <img src="/static/assets/images/work.svg" width="70px">
+               <h3 class="mt-3">Confianza Compañias</h3>
+            </div>
+         </div>
+         <div class="col-lg-3 col-md-6 mb-4 px-4">
+            <div class="bg-white rounded shadow p-4 border-top border-4 text-center" id="about-card3">
+               <img src="/static/assets/images/shop2.svg" width="70px">
+               <h3 class="mt-3">Tiendas</h3>
+            </div>
+         </div>
       </div>
    </div>
-   <div class="section__container footer__bar">
-      <p>Copyright © 2023 Web Design Mastery. All rights reserved.</p>
-   </div>
-</footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-   integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+   <!-- <h3 class="my-5 text-center">Nuestra Tematica</h3>
 
-<script>
-   var swiper = new Swiper(".mySwiper", {
-      pagination: {
-         el: ".swiper-pagination",
-         dynamicBullets: true,
-      },
-   });
-</script>
+   <div class="container px-4">
+      <div class="swiper mySwiper">
+         <div class="swiper-wrapper mb-5">
+            <div class="swiper-slide">
+               <img src="/static/assets/images/room1.jpg" class="img-fluid" alt="Room 1">
+            </div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide">Slide 4</div>
+            <div class="swiper-slide">Slide 5</div>
+            <div class="swiper-slide">Slide 6</div>
+            <div class="swiper-slide">Slide 7</div>
+            <div class="swiper-slide">Slide 8</div>
+            <div class="swiper-slide">Slide 9</div>
+         </div>
+         <div class="swiper-pagination"></div>
+      </div>
+   </div> -->
 
-{% endblock %}
+   <!-- Footer -->
+   <footer class="footer">
+      <div class="section__container footer__container">
+         <div class="footer__col">
+            <h3>La Posada B&B</h3>
+            <p>
+               Esperamos que puedas darnos oportunindad de servirte en tu proxima visita a San Pedro Sula. Nuestro hotel
+               tiene servicios comods para que te sientas como en casa, con un ambiente tranquilo y relajante, que puedes
+               disfrutar con tu familia o amigos.
+            </p>
+            <p>
+               Tenemos un staff amable y atento, que te ayudara en lo que necesites durante tu estadia.
+            </p>
+         </div>
+         <div class="col-lg-4 p-4">
+            <h5 class="mb-3 text-white">Links</h5>
+            <a href="#" class="d-inline-block mb-2 text-white text-decoration-none">Inicio</a> <br>
+            <a href="#" class="d-inline-block mb-2 text-white text-decoration-none">Reservar</a> <br>
+            <a href="#" class="d-inline-block mb-2 text-white text-decoration-none">Servicios</a> <br>
+            <a href="#" class="d-inline-block mb-2 text-white text-decoration-none">Contactanos</a> <br>
+            <a href="#" class="d-inline-block mb-2 text-white text-decoration-none">Sobre Nosotros</a> <br>
+         </div>
+         <div class="col-lg-4 p-4">
+            <h5 class="mb-3 text-white">Follow Us</h5>
+            <a href="https://www.facebook.com/laposada.hostel.5/"
+               class="d-inline-block text-white text-decoration-none mb-2" target="_blank"><i class="bi bi-facebook"></i>
+               Facebook</a> <br>
+            <a href="https://www.tiktok.com/@laposadasps" class="d-inline-block text-white text-decoration-none mb-2"
+               target="_blank"><i class="bi bi-tiktok"></i> Tiktok</a> <br>
+            <a href="https://www.instagram.com/laposadabyb/" class="d-inline-block text-white text-decoration-none"
+               target="_blank"><i class="bi bi-instagram"></i> Instagram</a> <br>
+         </div>
+      </div>
+      <div class="section__container footer__bar">
+         <p>Copyright © 2023 Web Design Mastery. All rights reserved.</p>
+      </div>
+   </footer>
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+   <script>
+      var swiper = new Swiper(".mySwiper", {
+         pagination: {
+            el: ".swiper-pagination",
+            dynamicBullets: true,
+         },
+      });
+   </script>
+
+</body>
+
+</html>

@@ -65,9 +65,9 @@ def services_page():
     return render_template("services.html", stylesheet='services.css')
 
 
-@app.route("/news")
-def news_page():
-    return render_template("news.html", stylesheet='style.css')
+# @app.route("/news")
+# def news_page():
+#     return render_template("news.html", stylesheet='style.css')
 
 
 @app.route("/contact")
