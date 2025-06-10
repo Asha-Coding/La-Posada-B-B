@@ -10,18 +10,16 @@
    --max-width: 1200px;
 }
 
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-   -webkit-appearance: none;
-   margin: 0;
-}
-
 * {
    padding: 0px;
    margin: 0px;
    box-sizing: border-box;
    text-decoration: none;
    font-family: "Poppins", sans-serif;
+}
+
+#sobre-nosotros {
+   padding-top: 100px;
 }
 
 
@@ -49,7 +47,9 @@ input::-webkit-inner-spin-button {
 #about-card4 {
    border-top-color: var(--primary-color) !important;
 }
-
+/* -----------------------
+   Header & Navbar Styles
+---------------------------*/
 .header {
    position: fixed;
    top: 0;
@@ -79,11 +79,10 @@ input::-webkit-inner-spin-button {
    width: 100px;
    font-size: 19.7px;
    font-weight: 500;
-   color: #cf4624;
+   color: var(--primary-color);
    text-transform: uppercase;
    letter-spacing: 2px;
    text-decoration: none;
-   /* font-family: "Oswald", sans-serif */
 }
 
 .header .navbar .logo-link span {
@@ -93,9 +92,14 @@ input::-webkit-inner-spin-button {
    letter-spacing: 1px;
    text-transform: uppercase;
    margin-left: -1px;
-   /* font-family: "Poppins", sans-serif */
 }
 
+/* A class using Oswald */
+.title {
+   font-family: "Oswald", sans-serif;
+}
+
+/* Navigation */
 .navigation {
    display: flex;
    gap: 0.6rem;
@@ -113,7 +117,7 @@ input::-webkit-inner-spin-button {
 }
 
 .header .navbar .navigation .link:hover {
-   color: #cf4624;
+   color: var(--primary-color);
 }
 
 .header .navbar .navigation .link::after {
@@ -130,15 +134,14 @@ input::-webkit-inner-spin-button {
 
 .header .navbar .navigation .link:hover::after {
    width: 60%;
-   background-color: #cf4624;
+   background-color: var(--primary-color);
 }
 
+/* Controls (Icons) */
 .header .navbar .controls {
    display: flex;
    justify-content: flex-end;
    gap: 1.2rem;
-   /* width: 50%; */
-
 }
 
 .header .navbar .controls .icon {
@@ -160,6 +163,11 @@ input::-webkit-inner-spin-button {
 .header .navbar .controls .icon:hover {
    background-color: #000;
    color: #fff !important;
+}
+
+/* Hidden menu toggle (used in responsive styles) */
+#menu {
+   display: none;
 }
 
 .section__container {
